@@ -1,0 +1,56 @@
+.img-portada{
+  background-image: url(../../../index/assets/img/index/banner_portada.jpg);
+  border-bottom: 6px solid #00a1b8;
+}
+
+.img-portada:before {
+  content:'';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.2);
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.005); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  box-shadow: 0 0 3px #FF0000, 0 0 10px #0000FF;
+}
+
+.titulo {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.video-responsive {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.social-unl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.social-unl li{
+  padding-left: 14px;
+  float: right;
+}
